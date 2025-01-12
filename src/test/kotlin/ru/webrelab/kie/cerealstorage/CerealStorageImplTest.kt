@@ -151,7 +151,7 @@ class CerealStorageImplTest {
             getCereal(Cereal.BULGUR, 0.1f)
         }
         val actual = storage.removeContainer(Cereal.BULGUR)
-        assertEquals(true, actual)
+        assertTrue(actual)
     }
 
     @Test
@@ -159,7 +159,7 @@ class CerealStorageImplTest {
     fun `container removal successful - false`() {
         storage.addCereal(Cereal.BULGUR, 0.1f)
         val actual = storage.removeContainer(Cereal.BULGUR)
-        assertEquals(false, actual)
+        assertFalse(actual)
     }
 
 
